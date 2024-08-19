@@ -1,0 +1,116 @@
+body, h1, p, form,fieldset {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+fieldset {
+  border: 0 ;
+  margin-top: 15px;
+
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.topForm h1,p {
+  text-align: center;
+  color: whitesmoke;  
+}
+
+.topForm{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the desired level of transparency */
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+
+.user-information, fieldset{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2.5%;
+}
+/* Target the text input fields within the .user-information div */
+.user-information input[type="text"],
+.user-information input[type="number"] {
+
+  /* Set font properties */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  /* Add padding and margin for spacing */
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  /* Define border styles */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  /* Add some additional styles for better readability */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the placeholder text */
+.user-information input[type="text"]::placeholder,
+.user-information input[type="number"]::placeholder {
+  color: #999; /* Change the color to a desired placeholder color */
+}
+
+/* Add a focus style for when the input is clicked or focused */
+.user-information input[type="text"]:focus,
+.user-information input[type="number"]:focus {
+  border-color: #007bff; /* Change the border color on focus */
+  outline: none; /* Remove the default focus outline */
+}
+
+#dropdown {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  /* Add padding and margin for spacing */
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  /* Define border styles */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  /* Add some additional styles for better readability */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+#dropdown:focus {
+  border-color: #007bff; /* Change the border color on focus */
+  outline: none; /* Remove the default focus outline */
+}
+  /* Style the label */
+  label {
+    font-weight: bold;
+  }
+  /* Style the select options */
+  option {
+    font-size: 14px;
+    color: black;
+  }
